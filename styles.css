@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("./images/background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  color: white;
+  background-color: #054cb5;
+  border-radius: 6px;
+  border: none;
+  font-family: "VT323", monospace;
+  font-size: 18px;
+  padding: 1px 8px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+#search {
+  display: inline-block;
+}
+
+#pokeImg {
+  width: 70%;
+}
+
+.pokedex {
+  font-family: "VT323", monospace;
+  width: 620px;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  -webkit-box-shadow: 10px 10px 18px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 18px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 18px -5px rgba(0, 0, 0, 0.75);
+}
+
+.pokedex-header {
+  background-color: #e8302f;
+  color: white;
+  font-size: 24px;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 0.3rem 0rem;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.pokedex-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "pokeImage pokeInfo" "pokeStats pokeStats";
+}
+
+#pokeImg {
+  grid-area: pokeImage;
+  margin: 0.8rem auto;
+}
+
+.pokeInfo {
+  grid-area: pokeInfo;
+  padding: 1rem;
+}
+
+.mainInfo,
+.abilities {
+  border-radius: 6px;
+  box-shadow: 2px 3px 12px -5px rgba(0, 0, 0, 0.75);
+}
+
+.pokeInfo .pokedex-header,
+.abilities .pokedex-header {
+  display: flex;
+  align-items: center;
+}
+
+.actualName,
+.abilities .pokedex-header > h3 {
+  display: inline-block;
+  font-size: 21px;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.pokeStats {
+  grid-area: pokeStats;
+}
+
+.mainInfo img,
+.abilities img {
+  width: 20px;
+}
+
+.pokeType {
+  padding: 10px;
+}
+
+.size {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.types {
+  margin-top: 1rem;
+}
+
+.type {
+  border-radius: 3px;
+  background-color: #054cb5;
+  color: white;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px 0 10px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+}
+
+.abilitiesTable {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.pokeStats {
+  text-align: center;
+}
